@@ -4,9 +4,6 @@ import org.bson.codecs.pojo.annotations.BsonProperty;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.Date;
-import java.util.List;
-
 
 import org.springframework.data.annotation.Id;
 
@@ -317,5 +314,11 @@ public class Employee {
                 ", Manager1='" + Manager1 + '\'' +
                 ", Manager2='" + Manager2 + '\'' +
                 '}';
+    }
+
+    public void setEmployeeCode(String s) {
+    }
+
+    public void setEmployeeCoder(String toString) {
     }
 }
