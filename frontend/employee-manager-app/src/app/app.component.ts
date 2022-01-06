@@ -13,25 +13,25 @@ export class AppComponent implements OnInit {
   title = 'employee-manager-app';
 
   // to hold all data coming from the database
-  public employees: Employee[] = [];
+  // public employees: Employee[] = [];
 
-  // inject employee service to this class of app component
-  constructor(private employeeService: EmployeeService) {
-  }
+  // // inject employee service to this class of app component
+  // constructor(private employeeService: EmployeeService) {
+  // }
 
   ngOnInit() {
-    this.getEmployees();
+    // this.getEmployees();
   }
 
-  public getEmployees(): void {
-    this.employeeService.getEmployees().subscribe(
-      (response) => {
-        this.employees = response;
-      },
-      (err: HttpErrorResponse) => {
-        console.log(err.message);
-        alert(err.message);
-      }
-    )
-  }
+  // public getEmployees(): void {
+  //   this.employeeService.getEmployees().subscribe(
+  //     (response) => {
+  //       this.employees = response;
+  //     },
+  //     (err: HttpErrorResponse) => {
+  //       console.log(err.message);
+  //       alert(err.message);
+  //     }
+  //   )
+  // }
 }
