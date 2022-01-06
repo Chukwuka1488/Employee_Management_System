@@ -22,8 +22,9 @@ public class EmployeeService {
 
     // add employee
     public Employee addEmployee(Employee employee) {
-        employee.setSAP_Personalnummer(Integer.parseInt(UUID.randomUUID().toString()));
+        System.out.println(employee.getSAP_Personalnummer());
         return employeeRepo.save(employee);
+
     }
 
     // delete employee
