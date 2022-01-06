@@ -1,22 +1,37 @@
-import { CUSTOM_ELEMENTS_SCHEMA, NgModule} from '@angular/core';
+
 import { BrowserModule } from '@angular/platform-browser';
 
+/* Routing */
 import { AppRoutingModule } from './app-routing.module';
+
+/* Main Component Module */
 import { AppComponent } from './app.component';
-import {HttpClientModule} from "@angular/common/http";
-import { RegisterComponent } from './components/register/register.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+/* Server Connection Module */
+import { HttpClientModule } from "@angular/common/http";
+
 // import { AngularMaterialModule } from './angular-material/angular-material.module';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { LogInComponent } from './components/log-in/log-in.component';
 import { AngularMaterialModule } from './angular-material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
+
+/* Angular Flex Layout */
+import { FlexLayoutModule } from '@angular/flex-layout';
+
+/* FormsModule */
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+/* Components */
+import { LogInComponent } from './components/log-in/log-in.component';
+import { RegisterComponent } from './components/register/register.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    RegisterComponent,
     LogInComponent,
+    RegisterComponent,
+    RegisterComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
