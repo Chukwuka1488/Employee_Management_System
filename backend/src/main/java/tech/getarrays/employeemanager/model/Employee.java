@@ -315,10 +315,4 @@ public class Employee {
                 ", Manager2='" + Manager2 + '\'' +
                 '}';
     }
-
-    public void setEmployeeCode(String s) {
-    }
-
-    public void setEmployeeCoder(String toString) {
-    }
 }
