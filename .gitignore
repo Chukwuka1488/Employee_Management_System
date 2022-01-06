@@ -46,4 +46,4 @@ atlassian-ide-plugin.xml
 .vscode/
 
 ### Sensitive Data ###
-backend/src/main/resources/application.properties
+src/main/resources/application.properties
